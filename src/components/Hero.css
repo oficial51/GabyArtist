@@ -1,0 +1,46 @@
+.BG {
+    background-image: url('../assets/fondo web.jpg');
+}
+
+.overlay {
+    height: calc(100vh - 64px);
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+.bgphone {
+    background-image: url('../assets/amir-seilsepour-VLJV46hPLSM-unsplash.jpg');
+    background-position: center center;
+
+}
+
+.one{
+    transform: rotate(-45deg);
+}
+
+.two{
+    transform: rotate(45deg);
+}
+
+span{
+    animation: move 1.8s infinite ease-in-out;
+}
+
+@keyframes move {
+    0%{margin-top: 0;}
+    50%{margin-top: 50px;}
+    100%{margin-top: 0;}    
+}
+
+@media screen and (min-width: 750px) {
+    .bgphone {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    @keyframes move {
+        0%{margin-top: 0;}
+        50%{margin-top: 100px;}
+        100%{margin-top: 0;}    
+    }
+}
